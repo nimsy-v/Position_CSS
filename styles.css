@@ -1,0 +1,163 @@
+/* Estilos generales */
+body {
+  background-color: rgb(232, 235, 213);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: green;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  color: darkred;
+}
+
+p {
+  color: rgb(16, 122, 171);
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.Alimentación {
+  color: rgb(138, 80, 161);
+  font-size: 16px;
+}
+
+.Tipos {
+  font-size: 1rem;
+}
+
+h2 {
+  color: brown;
+  font-size: 1.6rem;
+}
+
+#h2-id {
+  color: rgb(182, 13, 182);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+#Alimento-id-h2 {
+  color: initial;
+}
+
+/* Listas */
+.list {
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+#list-id {
+  background-color: lavender;
+}
+
+/* Encabezado adhesivo */
+header {
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+}
+
+header nav ul li a:hover {
+  background-color: #575757;
+  transition: 0.6s;
+}
+
+/* Tarjetas horizontales */
+.card-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-description {
+  flex: 1;
+}
+
+/* Footer */
+.cookie-footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Diseño adaptable */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .card-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 0.9rem;
+  }
+
+  .cookie-footer {
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+}
